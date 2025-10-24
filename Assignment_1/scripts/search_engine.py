@@ -46,7 +46,6 @@ def interactive():
             if choice.lower() == "list":
                 print("Indices:", ", ".join(available))
                 continue
-            # try to match
             fname = None
             for n in available:
                 if n.startswith(choice):
@@ -55,7 +54,6 @@ def interactive():
             if fname is None:
                 print(f"Index '{choice}' not found. Try one of:", ", ".join(available))
                 continue
-            # load
             try:
                 print(f"📂 Loading index: {fname} ...")
                 current_idx = load_index_file(fname)
@@ -76,11 +74,8 @@ def interactive():
             continue
         if not q:
             continue
-        # run query — query() returns a list (guaranteed by SelfIndex above)
         try:
             results = current_idx.query(q)
-            # results is a list of dicts; CLI already printed top results in query()
-            # If other scripts need to use results, they will get the list too.
             if not isinstance(results, list):
                 print("⚠️ Unexpected result format from query().")
             else:
