@@ -28,9 +28,7 @@ def analyze(path, sample_limit=200000):
                 try:
                     obj = json.loads(line)
                 except Exception:
-                    # skip malformed
                     continue
-                # prefer common text keys
                 text = obj.get("text") or obj.get("body") or obj.get("content") or obj.get("article") or obj.get("title") or ""
                 L = len(text.strip())
                 lengths.append(L)
