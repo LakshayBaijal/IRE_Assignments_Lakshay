@@ -7,7 +7,6 @@ from elasticsearch import Elasticsearch
 import json
 import time
 
-# Connect to Docker ElasticSearch
 es = Elasticsearch("http://localhost:9200")
 
 def index_dataset(index_name, path):
