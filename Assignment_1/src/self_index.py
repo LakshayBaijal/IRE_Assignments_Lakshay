@@ -25,11 +25,8 @@ def tokenize(text: str) -> List[str]:
 
 class SelfIndex:
     def __init__(self):
-        # term -> list of doc_ids (we keep doc_ids as strings to match your JSON files)
         self.inverted_index: Dict[str, List[str]] = {}
-        # doc_id -> full text
         self.documents: Dict[str, str] = {}
-        # optional title store
         self.titles: Dict[str, str] = {}
 
     def build_from_jsonl(self, path: str, text_key_preference=None, max_docs=None):
@@ -58,7 +55,6 @@ class SelfIndex:
                 except Exception:
                     continue
                 doc_id = str(obj.get("id", str(i)))
-                # pick best text field
                 text = ""
                 for k in text_key_preference:
                     if obj.get(k):
@@ -68,7 +64,6 @@ class SelfIndex:
                     text = ""
                 text = str(text).strip()
                 if not text:
-                    # skip empty
                     continue
                 self.documents[doc_id] = text
                 title = obj.get("title", "")
@@ -79,7 +74,6 @@ class SelfIndex:
                 seen = set()
                 for tok in tokens:
                     if tok in seen:
-                        # keep posting only once for this doc (we are using term->doclist)
                         continue
                     seen.add(tok)
                     if tok not in self.inverted_index:
@@ -140,7 +134,6 @@ class SelfIndex:
         if not q:
             return []
 
-        # phrase
         if q.startswith('"') and q.endswith('"') and len(q) >= 2:
             phrase = q[1:-1].strip()
             doc_ids = self._phrase_search(phrase)
@@ -149,40 +142,28 @@ class SelfIndex:
                 txt = self.documents.get(did, "")
                 snippet = txt[:300].replace("\n", " ")
                 results.append({"doc_id": did, "score": 1.0, "snippet": snippet})
-            # print
             print(f"🔍 Query: '{q}' → {len(results)} results (phrase search)")
             for r in results[:10]:
                 print(f"  - {r['doc_id']}: {r['snippet'][:120]}...")
             return results
 
-        # tokenize query for boolean-ish handling
         parts = q.split()
-        # simple boolean evaluator:
-        # support tokens AND, OR, NOT (capitalization ignored). Evaluate left-to-right.
-        # start with first term's doc set, then combine.
         def get_set_for_token(tok: str):
             if tok.upper() in ("AND", "OR", "NOT"):
                 return tok.upper()
-            # normal term
             return set(self._term_docs(tok))
 
-        # build list of operands / ops
         stack = []
         for tok in parts:
             stack.append(get_set_for_token(tok))
 
-        # if only one set (single-term or multiple words not using AND/OR/NOT) -> union of terms
         if all(isinstance(x, set) for x in stack):
-            # union documents of all tokens
             union_set = set()
             for s in stack:
                 union_set |= s
             ranked = self._rank_by_term_frequency(list(union_set), parts)
         else:
-            # evaluate left-to-right
-            # initial value:
             i = 0
-            # find first set
             while i < len(stack) and not isinstance(stack[i], set):
                 i += 1
             if i >= len(stack):
@@ -192,9 +173,7 @@ class SelfIndex:
             while i < len(stack):
                 op = stack[i]
                 i += 1
-                # find next set
                 while i < len(stack) and not isinstance(stack[i], set):
-                    # handle consecutive operators by skipping invalids
                     i += 1
                 if i >= len(stack):
                     break
@@ -207,18 +186,15 @@ class SelfIndex:
                 elif op == "NOT":
                     current = current - nxt
                 else:
-                    # unexpected operator token (treat as OR)
                     current = current | nxt
             ranked = self._rank_by_term_frequency(list(current), parts)
 
-        # Build results list of dicts
         results = []
         for doc_id, score in ranked:
             text = self.documents.get(doc_id, "")
             snippet = text[:300].replace("\n", " ")
             results.append({"doc_id": doc_id, "score": float(score), "snippet": snippet})
 
-        # Print top 10
         print(f"🔍 Query: '{q}' → {len(results)} results")
         for r in results[:10]:
             print(f"  - {r['doc_id']}: {r['snippet'][:120]}...")
@@ -232,7 +208,7 @@ class SelfIndex:
         """
         out = []
         q_terms = [t.lower() for t in query_terms if t.upper() not in ("AND", "OR", "NOT")]
-        q_terms = [t for t in q_terms if t]  # remove empties
+        q_terms = [t for t in q_terms if t] 
         for did in doc_ids:
             text = self.documents.get(did, "").lower()
             count = 0
