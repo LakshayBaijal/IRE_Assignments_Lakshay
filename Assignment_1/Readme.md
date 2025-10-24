@@ -1,3 +1,12 @@
+# Description
+This project is part of the Information Retrieval Engineering (IRE) course.
+It focuses on building a search engine that supports two types of indexing and querying mechanisms:
+
+- ElasticSearch-based Search
+- Self Index Search (Custom Implementation)
+
+
+
 # Project Structure
 <img width="321" height="777" alt="Screenshot from 2025-10-25 03-54-46" src="https://github.com/user-attachments/assets/95699177-afda-401e-a157-49ad0b661b82" />
 
