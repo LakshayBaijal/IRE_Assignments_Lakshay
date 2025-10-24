@@ -1,0 +1,18 @@
+Commands 
+
+python -m scripts.search_engine
+
+
+sudo docker stop elasticsearch
+sudo docker rm elasticsearch
+sudo docker run -d \
+  --name elasticsearch \
+  -p 9200:9200 \
+  -e "discovery.type=single-node" \
+  -e "xpack.security.enabled=false" \
+  docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+
+
+sudo docker ps
+python -m scripts.performance_compare_es_vs_self
+python -m scripts.plot_performance_graph

@@ -1,0 +1,8 @@
+nltk
+tqdm
+elasticsearch==8.10.0
+elasticsearch-dsl==8.9.0
+psutil
+matplotlib
+scikit-learn
+pandas
