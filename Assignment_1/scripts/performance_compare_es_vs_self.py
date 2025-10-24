@@ -12,7 +12,6 @@ from src.self_index import SelfIndex
 
 queries = ["india", "finance", "technology", "war", "health"]
 
-# Connect to ES
 es = Elasticsearch("http://localhost:9200")
 
 def query_es(index, q):
