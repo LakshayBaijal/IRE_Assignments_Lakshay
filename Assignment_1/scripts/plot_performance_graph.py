@@ -11,29 +11,24 @@ import matplotlib.pyplot as plt
 import os
 
 def plot_performance():
-    # Check if metrics.csv exists
     if not os.path.exists("metrics.csv"):
         print("❌ metrics.csv not found! Please run performance_compare_es_vs_self.py first.")
         return
 
-    # Load metrics.csv
     df = pd.read_csv("metrics.csv")
     print(f"✅ Loaded metrics.csv with {len(df)} entries.\n")
 
     print("📊 Performance Summary:")
     print(df.to_string(index=False))
 
-    # Normalize column names (handle capitalization)
     df.columns = [c.strip().lower() for c in df.columns]
 
-    # Simple sanity check for required columns
     required = ["query", "es_time_ms", "self_time_ms"]
     for col in required:
         if col not in df.columns:
             print(f"❌ Missing column: {col}")
             return
 
-    # === Plot comparison ===
     plt.figure(figsize=(8, 4))
     plt.plot(df["query"], df["es_time_ms"], marker="o", label="Elasticsearch", color="tab:blue")
     plt.plot(df["query"], df["self_time_ms"], marker="o", label="SelfIndex", color="tab:orange")
