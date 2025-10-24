@@ -36,7 +36,7 @@ def query(self, q: str):
         return []
 
     if not hasattr(self, "inverted_index"):
-        print("⚠️ Index not loaded.")
+        print(" Index not loaded.")
         return []
 
     q_terms = [t.lower() for t in q.split()]
@@ -46,7 +46,6 @@ def query(self, q: str):
             for doc_id in self.inverted_index[term]:
                 matched[doc_id] = matched.get(doc_id, 0) + 1
 
-    # Rank by match frequency
     ranked = sorted(matched.items(), key=lambda x: x[1], reverse=True)
     results = []
 
@@ -59,9 +58,7 @@ def query(self, q: str):
             "snippet": snippet
         })
 
-    # Optional: console feedback
     print(f"🔍 Query: '{q}' → {len(results)} results")
 
-    # ✅ Always return the list for display_results() to use
     return results
 
