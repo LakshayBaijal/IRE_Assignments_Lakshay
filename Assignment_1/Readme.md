@@ -37,4 +37,10 @@ It focuses on building a search engine that supports two types of indexing and q
   https://drive.google.com/drive/folders/1zrTQUMP7srrhQCMSkwU27QB5xVxmM3DY
   ```
   
-  
+# Requirments
+
+```br
+python3 -m venv venv
+source venv/bin/activate   # On Linux
+pip install -r requirements.txt
+```
