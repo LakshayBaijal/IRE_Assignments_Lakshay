@@ -40,5 +40,35 @@ It focuses on building a search engine that supports two types of indexing and q
 ```br
 python3 -m venv venv
 source venv/bin/activate   # On Linux
-pip install -r requirements.txt
+```
+# For ElasticSearch Mode
+
+```br
+sudo docker stop elasticsearch
+sudo docker rm elasticsearch
+sudo docker run -d \
+  --name elasticsearch \
+  -p 9200:9200 \
+  -e "discovery.type=single-node" \
+  -e "xpack.security.enabled=false" \
+  docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+```
+```br
+sudo service elasticsearch start
+sudo docker ps
+```
+
+
+# Scripts Execute
+- For Search Engine {Self Index Mode}
+```br
+python -m scripts.search_engine
+```
+- For Comparision Between Elastic Search and Self Index Mode
+```br
+python -m scripts.performance_compare_es_vs_self
+```
+- For Plotting Graph using Metrics.csv
+```br
+python -m scripts.plot_performance_graph
 ```
