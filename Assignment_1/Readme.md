@@ -7,9 +7,9 @@ It focuses on building a search engine that supports two types of indexing and q
 
 # Features
 
-## ElasticSearch Mode: Uses the ElasticSearch engine for indexing and querying.
+- ElasticSearch Mode: Uses the ElasticSearch engine for indexing and querying.
 
-## Self Index Mode: Implements a custom inverted index and search ranking system from scratch.
+- Self Index Mode: Implements a custom inverted index and search ranking system from scratch.
 
 - Custom Tokenization and Preprocessing
 
