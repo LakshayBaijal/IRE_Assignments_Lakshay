@@ -1,9 +1,18 @@
+
+
 # Description
 This project is part of the Information Retrieval Engineering (IRE) course.
 It focuses on building a search engine that supports two types of indexing and querying mechanisms:
 
 - ElasticSearch-based Search
 - Self Index Search (Custom Implementation)
+
+# Implementation
+- Youtube Video
+```br
+https://youtu.be/R9JBqfPQyXY
+```
+
 
 # Features
 
