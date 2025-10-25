@@ -82,3 +82,21 @@ python -m scripts.performance_compare_es_vs_self
 ```br
 python -m scripts.plot_performance_graph
 ```
+
+
+# Output Screenshots
+<img width="1139" height="980" alt="Screenshot from 2025-10-21 03-43-50" src="https://github.com/user-attachments/assets/4229f8b6-3070-4fb9-84f9-2eb8971d58bf" />
+
+<img width="534" height="395" alt="Screenshot from 2025-10-21 04-21-10" src="https://github.com/user-attachments/assets/1bbda886-872b-4956-adf7-95c7c96c31cf" />
+
+<img width="797" height="577" alt="Screenshot from 2025-10-24 02-56-39" src="https://github.com/user-attachments/assets/d76b329a-8e13-44a0-bf02-35fe9c8ed4e6" />
+
+<img width="1805" height="932" alt="Screenshot from 2025-10-23 05-03-56" src="https://github.com/user-attachments/assets/6dfbf434-a773-4949-ad48-2da4ed65b2fd" />
+
+<img width="1805" height="932" alt="Screenshot from 2025-10-23 04-44-44" src="https://github.com/user-attachments/assets/bc9a1a46-1bee-4411-ab13-b4f653bcf289" />
+
+<img width="534" height="395" alt="Screenshot from 2025-10-21 04-21-10" src="https://github.com/user-attachments/assets/c7ba3ac8-68cd-4994-98f5-28a30b8d305a" />
+
+
+
+
