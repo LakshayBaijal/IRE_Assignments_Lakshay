@@ -66,6 +66,7 @@ python -m scripts.search_engine
 ```
 - For Comparision Between Elastic Search and Self Index Mode
 ```br
+python scripts/test_es_index.py
 python -m scripts.performance_compare_es_vs_self
 ```
 - For Plotting Graph using Metrics.csv
