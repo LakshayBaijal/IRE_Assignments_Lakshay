@@ -8,6 +8,7 @@ It focuses on building a search engine that supports two types of indexing and q
 - Self Index Search (Custom Implementation)
 
 # Implementation
+https://github.com/user-attachments/assets/54fb81d4-a82f-4ae8-b196-eeb6dd5020d3
 
 
 # Features
@@ -23,6 +24,9 @@ It focuses on building a search engine that supports two types of indexing and q
 - Efficient Index Storage
 
 - Evaluation on Multiple Queries
+
+
+
 
 
 
