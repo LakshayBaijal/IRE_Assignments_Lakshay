@@ -8,8 +8,6 @@ It focuses on building a search engine that supports two types of indexing and q
 - Self Index Search (Custom Implementation)
 
 # Implementation
-<video src="https://github.com/LakshayBaijal/IRE_Assignments_Lakshay/raw/main/Assignment_1/Assignment%201.webm" 
-controls width="700"></video>
 
 
 # Features
