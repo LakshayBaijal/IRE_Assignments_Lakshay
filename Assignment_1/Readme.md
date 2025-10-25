@@ -8,7 +8,7 @@ It focuses on building a search engine that supports two types of indexing and q
 - Self Index Search (Custom Implementation)
 
 # Implementation
-youtube.com/watch?v=R9JBqfPQyXY
+[![Watch the video](https://www.youtube.com/watch?v=R9JBqfPQyXY/<VIDEO_ID>/0.jpg)](https://www.youtube.com/watch?v=R9JBqfPQyXY)
 
 
 # Features
