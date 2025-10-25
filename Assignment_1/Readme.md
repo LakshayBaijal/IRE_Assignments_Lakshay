@@ -9,6 +9,7 @@ It focuses on building a search engine that supports two types of indexing and q
 
 # Implementation
 
+
 # Features
 
 - ElasticSearch Mode: Uses the ElasticSearch engine for indexing and querying.
