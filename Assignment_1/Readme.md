@@ -10,6 +10,10 @@ It focuses on building a search engine that supports two types of indexing and q
 # Implementation
 https://github.com/user-attachments/assets/54fb81d4-a82f-4ae8-b196-eeb6dd5020d3
 
+# Report
+```br
+https://github.com/LakshayBaijal/IRE_Assignments_Lakshay/blob/main/Assignment_1/Assignment%201.pdf
+```
 
 # Features
 
