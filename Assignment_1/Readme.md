@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/54fb81d4-a82f-4ae8-b196-eeb6dd5020d3
 python3 -m venv venv
 source venv/bin/activate   # On Linux
 ```
-# For ElasticSearch Mode
+### For ElasticSearch Mode
 
 ```br
 sudo docker stop elasticsearch
@@ -74,7 +74,7 @@ sudo docker ps
 ```
 
 
-# Scripts Execute
+### Scripts Execute
 - For Search Engine {Self Index Mode}
 ```br
 python -m scripts.search_engine
