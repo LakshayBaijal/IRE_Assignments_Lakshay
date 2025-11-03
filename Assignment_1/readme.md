@@ -1,4 +1,4 @@
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/b115cc82-92d2-4041-9447-b66521366f57" /># IRE Assignment 1 - Text Indexing and Retrieval
+# IRE Assignment 1 - Text Indexing and Retrieval
 
 ## Introduction
 It focuses on building and analyzing a self implemented inverted index and
