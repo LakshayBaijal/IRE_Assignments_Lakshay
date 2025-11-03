@@ -233,6 +233,21 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
   <img width="890" height="347" alt="image" src="https://github.com/user-attachments/assets/f2711df3-2aa7-49dd-92bc-90191566c198" />
   <img width="880" height="347" alt="image" src="https://github.com/user-attachments/assets/87e191f9-9c3f-49c4-ad02-c07a6eca2c86" />
 
+### Latency Measurement
+- Measuring query latency
+
+<img width="874" height="227" alt="image" src="https://github.com/user-attachments/assets/e5ce07d2-9eaf-4b4d-9af4-5323b86c3a01" />
+
+- Latency results for the Wiki dataset
+
+<img width="896" height="315" alt="image" src="https://github.com/user-attachments/assets/dcbc9909-72ac-49d7-8047-cab5e6f0b7c9" />
+
+- Latency results for the News dataset
+
+<img width="920" height="315" alt="image" src="https://github.com/user-attachments/assets/05d98f62-81d5-4b4e-9269-47199f7408d5" />
+
+
+
 
 
 
