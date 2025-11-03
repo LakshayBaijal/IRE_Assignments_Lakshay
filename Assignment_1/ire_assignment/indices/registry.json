@@ -1,0 +1,20 @@
+{
+  "indices": {
+    "wiki_index": {
+      "core": "SelfIndex",
+      "info": "BOOLEAN",
+      "dstore": "CUSTOM",
+      "compr": "NONE",
+      "qproc": "TERMatat",
+      "optim": "Null"
+    },
+    "news_index": {
+      "core": "SelfIndex",
+      "info": "BOOLEAN",
+      "dstore": "CUSTOM",
+      "compr": "NONE",
+      "qproc": "TERMatat",
+      "optim": "Null"
+    }
+  }
+}

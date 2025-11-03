@@ -1,0 +1,250 @@
+[
+  {
+    "query": "\"camelu\" OR \"dikkonak\"",
+    "latency_ms": 0.355
+  },
+  {
+    "query": "\"urkut\" OR \"gala\"",
+    "latency_ms": 0.35
+  },
+  {
+    "query": "\"calcispongea\" AND \"gasfet\"",
+    "latency_ms": 0.245
+  },
+  {
+    "query": "\"conferencia\" AND \"bauman\"",
+    "latency_ms": 0.244
+  },
+  {
+    "query": "\"intego\" AND \"teomitl\"",
+    "latency_ms": 0.229
+  },
+  {
+    "query": "\"hulkster\" OR \"cowrit\"",
+    "latency_ms": 0.233
+  },
+  {
+    "query": "\"claisen\" OR \"baglioni\"",
+    "latency_ms": 0.231
+  },
+  {
+    "query": "NOT \"kluk\"",
+    "latency_ms": 11.319
+  },
+  {
+    "query": "\"ghototkacha\" AND \"hakeem\"",
+    "latency_ms": 0.327
+  },
+  {
+    "query": "\"hunstret\" AND \"siystl\"",
+    "latency_ms": 0.279
+  },
+  {
+    "query": "\"offray\" OR \"teme\"",
+    "latency_ms": 0.282
+  },
+  {
+    "query": "NOT \"aruan\"",
+    "latency_ms": 11.051
+  },
+  {
+    "query": "\"transdev\" AND \"eilidh\"",
+    "latency_ms": 0.319
+  },
+  {
+    "query": "\"xylon\" OR \"ec92\"",
+    "latency_ms": 0.276
+  },
+  {
+    "query": "NOT \"zaynab\"",
+    "latency_ms": 10.737
+  },
+  {
+    "query": "\"tashkil\" OR \"radino\"",
+    "latency_ms": 0.32
+  },
+  {
+    "query": "NOT \"senko\"",
+    "latency_ms": 11.212
+  },
+  {
+    "query": "\"colombu\" AND \"squander\"",
+    "latency_ms": 0.312
+  },
+  {
+    "query": "NOT \"tuckshop\"",
+    "latency_ms": 11.089
+  },
+  {
+    "query": "\"vahl\" AND \"dharwar\"",
+    "latency_ms": 0.311
+  },
+  {
+    "query": "\"98727273\" OR \"oshita\"",
+    "latency_ms": 0.281
+  },
+  {
+    "query": "NOT \"pobrezhi\"",
+    "latency_ms": 11.041
+  },
+  {
+    "query": "\"jaccard\" OR \"nordwestmecklenburg\"",
+    "latency_ms": 0.311
+  },
+  {
+    "query": "\"kynal\" AND \"acerronia\"",
+    "latency_ms": 0.27
+  },
+  {
+    "query": "\"cabalist\" OR \"subbas\"",
+    "latency_ms": 0.266
+  },
+  {
+    "query": "\"exoskelet\" AND \"isoxazol\"",
+    "latency_ms": 0.254
+  },
+  {
+    "query": "\"w13bf\" AND \"mutiwokuziva\"",
+    "latency_ms": 0.254
+  },
+  {
+    "query": "NOT \"takesu\"",
+    "latency_ms": 11.175
+  },
+  {
+    "query": "\"halston\" AND \"yisu\"",
+    "latency_ms": 0.325
+  },
+  {
+    "query": "\"gramo\" OR \"arra\"",
+    "latency_ms": 0.276
+  },
+  {
+    "query": "\"ilker\" AND \"nocer\"",
+    "latency_ms": 0.268
+  },
+  {
+    "query": "NOT \"kostandin\"",
+    "latency_ms": 11.034
+  },
+  {
+    "query": "\"ntsc\" OR \"seraf\"",
+    "latency_ms": 0.384
+  },
+  {
+    "query": "\"anzu\" OR \"kapoor\"",
+    "latency_ms": 0.32
+  },
+  {
+    "query": "\"halio\" OR \"click\"",
+    "latency_ms": 0.428
+  },
+  {
+    "query": "\"aslef\" OR \"tokist\"",
+    "latency_ms": 0.272
+  },
+  {
+    "query": "\"sweeter\" AND \"civil\"",
+    "latency_ms": 24.285
+  },
+  {
+    "query": "\"rechlim\" AND \"politarch\"",
+    "latency_ms": 0.282
+  },
+  {
+    "query": "\"perbrom\" OR \"cruickshank\"",
+    "latency_ms": 0.28
+  },
+  {
+    "query": "NOT \"guardafui\"",
+    "latency_ms": 10.801
+  },
+  {
+    "query": "\"zilog\" AND \"hyoscin\"",
+    "latency_ms": 0.311
+  },
+  {
+    "query": "\"lookalik\" OR \"archonta\"",
+    "latency_ms": 0.268
+  },
+  {
+    "query": "\"halpern\" OR \"castrovillari\"",
+    "latency_ms": 0.271
+  },
+  {
+    "query": "\"hobo\" OR \"dynasti\"",
+    "latency_ms": 0.273
+  },
+  {
+    "query": "\"0124\" AND \"gemayel\"",
+    "latency_ms": 0.254
+  },
+  {
+    "query": "NOT \"nepenth\"",
+    "latency_ms": 11.167
+  },
+  {
+    "query": "\"moennig\" OR \"abad\"",
+    "latency_ms": 0.307
+  },
+  {
+    "query": "NOT \"argentaffin\"",
+    "latency_ms": 11.126
+  },
+  {
+    "query": "\"arqa\" AND \"volar\"",
+    "latency_ms": 0.318
+  },
+  {
+    "query": "\"prospekta\" AND \"platysiagiform\"",
+    "latency_ms": 0.272
+  },
+  {
+    "query": "\"southlak\" OR \"yorac\"",
+    "latency_ms": 0.269
+  },
+  {
+    "query": "\"ortega\" AND \"18765\"",
+    "latency_ms": 0.28
+  },
+  {
+    "query": "\"manolet\" AND \"haffenreff\"",
+    "latency_ms": 0.258
+  },
+  {
+    "query": "\"frink\" OR \"hemodynam\"",
+    "latency_ms": 0.257
+  },
+  {
+    "query": "\"rgassen\" OR \"cookhous\"",
+    "latency_ms": 0.253
+  },
+  {
+    "query": "\"countryman\" AND \"civa\"",
+    "latency_ms": 0.275
+  },
+  {
+    "query": "NOT \"dienedio\"",
+    "latency_ms": 10.903
+  },
+  {
+    "query": "\"srepok\" AND \"tabor\"",
+    "latency_ms": 0.325
+  },
+  {
+    "query": "\"mandragorizomen\" OR \"santin\"",
+    "latency_ms": 0.279
+  },
+  {
+    "query": "\"bearberri\" OR \"thurso\"",
+    "latency_ms": 0.262
+  },
+  {
+    "query": "\"marquez\" OR \"ostrov\"",
+    "latency_ms": 0.288
+  },
+  {
+    "query": "\"italodimaria\" AND \"stylinski\"",
+    "latency_ms": 0.25
+  }
+]
