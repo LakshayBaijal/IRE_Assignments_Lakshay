@@ -321,3 +321,14 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
 - Version v1.32112 – TF-IDF + Compression + Skipping + DAAT (q=2) {Latency: 309.67 ms Returned: 592}
 
   <img width="881" height="451" alt="image" src="https://github.com/user-attachments/assets/aa389296-5e19-468b-a880-130843aa82bc" />
+
+
+# Elasticsearch Index Creation
+## Elastic Search Indexing of Wiki and News dataset
+<img width="369" height="283" alt="image" src="https://github.com/user-attachments/assets/5d7c583e-69e6-48bf-91a8-d3c244e30322" />
+
+## Query Execution and Result Retrieval
+<img width="501" height="209" alt="image" src="https://github.com/user-attachments/assets/6ff7a732-7c8a-4828-8076-0642570afa3c" />
+
+## Latency Metrics Compilation
+<img width="1092" height="762" alt="image" src="https://github.com/user-attachments/assets/8e43b3f4-9923-48df-b1e5-b9eaa3220f04" />
