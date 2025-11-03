@@ -6,6 +6,12 @@ comparing its query latency and performance with pre built indexing systems. The
 task involves preprocessing, index construction, query execution, and latency
 measurement on two datasets Wikipedia and News.
 
+## Download Dataset
+```br
+https://drive.google.com/drive/folders/1G1bWYRaep7kCVg9a1cM7i-TI1rc0lZF6
+```
+
+
 ## Directory Structure
 ```br
 .
