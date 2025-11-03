@@ -104,3 +104,97 @@ https://drive.google.com/drive/folders/1G1bWYRaep7kCVg9a1cM7i-TI1rc0lZF6
 20 directories, 66 files
 ```
 
+## Build & Verify SQLite Index
+- Build & Verify SQLite Index
+```br
+python3 scripts/build_index.py data/wiki.txt wiki_index.db
+```
+- Verify database contents
+```br
+python3 scripts/verify_sqlite.py wiki_index.db
+```
+
+## Search Using SQLite Index (SelfIndex-v1.x)
+- Boolean retrieval (x=1)
+```br
+python3 scripts/search_sqlite_v.py wiki_index.db --version v1.12000 --query "artificial intelligence" --topk 10
+```
+
+- TF Ranking (x=2)
+
+```br
+python3 scripts/search_sqlite_v.py wiki_index.db --version v1.22000 --query "artificial intelligence" --topk 10
+```
+
+- TF-IDF Ranking (x=3)
+
+```br
+python3 scripts/search_sqlite_v.py wiki_index.db --version v1.32000 --query "artificial intelligence" --topk 10
+```
+
+- TF-IDF + Compression + Skipping (x=3, z=1, i=1)
+
+```br
+python3 scripts/search_sqlite_v.py wiki_index.db --version v1.32110 --query "artificial intelligence" --topk 10
+```
+
+- TF-IDF + Compression + Skipping + DAAT (x=3, z=1, i=1, q=2)
+```br
+python3 scripts/search_sqlite_v.py wiki_index.db --version v1.32112 --query "artificial intelligence" --topk 10
+```
+
+## Convert SQLite to JSON Format
+- Generate JSONL from database
+
+```br
+python3 scripts/sqlite_to_jsonl.py wiki_index.db wiki_postings.jsonl
+```
+
+## Search Using JSON Version (SelfIndex-v1.y)
+- Boolean Search (y=1, JSON datastore)
+```br
+python3 scripts/search_json_v.py wiki_postings.jsonl --version v1.12000 --query "artificial intelligence" --topk 10
+```
+- TF-IDF Search (y=1, JSON datastore)
+
+```br
+python3 scripts/search_json_v.py wiki_postings.jsonl --version v1.32000 --query "artificial intelligence" --topk 10
+```
+
+## Measure Query Latency
+- Wiki Dataset
+
+```br
+python3 scripts/measure_latency_sqlite.py wiki_index.db scripts/wiki_queries.txt results/wiki_latency_results.csv
+```
+
+- News Dataset
+```br
+python3 scripts/measure_latency_sqlite.py news_index.db scripts/news_queries.txt results/news_latency_results.csv
+```
+
+## Plot Latency Results
+- For wiki
+```br
+python3 scripts/plot_latency.py results/wiki_latency_results.csv
+```
+- For News
+```br
+python3 scripts/plot_latency.py results/news_latency_results.csv
+```
+
+## Run Elasticsearch Index (Docker)
+```br
+sudo docker start elasticsearch-container
+curl http://localhost:9200
+```
+
+- Build ES index
+```br
+python3 es_scripts/es_build_index.py wiki_es_index wiki_dataset.jsonl
+```
+- Search
+```br
+python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
+```
+
