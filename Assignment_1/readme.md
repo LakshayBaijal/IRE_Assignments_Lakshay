@@ -198,3 +198,41 @@ python3 es_scripts/es_build_index.py wiki_es_index wiki_dataset.jsonl
 python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
 ```
 
+## Output
+### Preprocessing
+- News dataset
+  <img width="926" height="206" alt="image" src="https://github.com/user-attachments/assets/e5917d90-19aa-4a10-a259-d199f7849139" />
+
+- Wiki dataset
+  <img width="903" height="202" alt="image" src="https://github.com/user-attachments/assets/0fc401be-0fc7-4be4-a674-f091039e70ce" />
+
+### Index Construction
+<img width="1516" height="139" alt="image" src="https://github.com/user-attachments/assets/ff85c1f8-310b-4312-b752-936047b9a3c3" />
+
+### Verification of SQLite index showing document and posting counts.
+<img width="1508" height="580" alt="image" src="https://github.com/user-attachments/assets/873ae22f-add5-4c47-ab7a-e8dbea335725" />
+
+### Exporting preprocessed documents into SQLite for indexing.
+<img width="1511" height="296" alt="image" src="https://github.com/user-attachments/assets/f3ba428d-642c-4206-b040-91415d9fbfa2" />
+
+### Query Execution
+- Wiki Dataset
+  <img width="866" height="466" alt="image" src="https://github.com/user-attachments/assets/3552e87e-bcea-4dfa-9944-206f53a191f8" />
+  <img width="875" height="348" alt="image" src="https://github.com/user-attachments/assets/271e328c-9456-4a8f-a109-1156d0deb5ae" />
+  <img width="842" height="348" alt="image" src="https://github.com/user-attachments/assets/ca744935-589a-4914-86a6-e89192b6e96a" />
+  <img width="840" height="348" alt="image" src="https://github.com/user-attachments/assets/c230ee45-ab86-43da-a138-1f14b7e00b88" />
+  <img width="844" height="348" alt="image" src="https://github.com/user-attachments/assets/8aa325b6-c72e-4a5c-b92b-fe285a604e7d" />
+
+- News Dataset
+  <img width="869" height="228" alt="image" src="https://github.com/user-attachments/assets/1346d9f4-670c-439b-9231-814e93b9ea0c" />
+  <img width="892" height="301" alt="image" src="https://github.com/user-attachments/assets/c9c660ae-e00d-4410-9da6-598cd8027e9f" />
+  <img width="890" height="347" alt="image" src="https://github.com/user-attachments/assets/f2711df3-2aa7-49dd-92bc-90191566c198" />
+  <img width="880" height="347" alt="image" src="https://github.com/user-attachments/assets/87e191f9-9c3f-49c4-ad02-c07a6eca2c86" />
+
+
+
+
+
+
+
+
