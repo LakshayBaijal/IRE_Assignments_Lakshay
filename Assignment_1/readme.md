@@ -1,4 +1,4 @@
-# IRE Assignment 1 - Text Indexing and Retrieval
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/b115cc82-92d2-4041-9447-b66521366f57" /># IRE Assignment 1 - Text Indexing and Retrieval
 
 ## Introduction
 It focuses on building and analyzing a self implemented inverted index and
@@ -247,8 +247,41 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
 <img width="920" height="315" alt="image" src="https://github.com/user-attachments/assets/05d98f62-81d5-4b4e-9269-47199f7408d5" />
 
 
+### Latency Visualization
+- Wiki Dataset before optimization
+
+  <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/ffe675f8-543e-41da-a256-9cd978af2587" />
+
+- Wiki dataset latency after optimization
+
+  <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/af2df832-e9e8-4ed1-b8ef-70a35ae4dbb8" />
+
+- News dataset latency before optimization
+
+  <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/fb09d04b-bb63-4bc6-8ae5-5250ec66a5d0" />
+
+- News dataset latency after optimization.
+
+  <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/d08e637e-6dc7-4362-a80c-056b9b2ab4e7" />
+
+- Bar plot of Wiki query latencies.
+
+  <img width="1378" height="827" alt="image" src="https://github.com/user-attachments/assets/f65e98e2-24dd-4bd7-af5a-e41620003352" />
+
+- Bar plot of News query latencies.
+
+  <img width="1378" height="827" alt="image" src="https://github.com/user-attachments/assets/4703a8c8-b55f-4eb7-8a55-6fcf594f0ff0" />
 
 
+## Performance Comparison
+- performance difference between Wiki and News datasets
+
+  <img width="534" height="395" alt="image" src="https://github.com/user-attachments/assets/79c76cb0-d273-4d99-afbd-3eae035c37da" />
+
+- latency comparison graph between wiki and news dataset
+
+  <img width="817" height="548" alt="image" src="https://github.com/user-attachments/assets/1714b896-b53a-47d0-a9d7-5cf45a30cbe7" />
+  <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/f632678d-7272-4888-90bb-caa345f74264" />
 
 
 
