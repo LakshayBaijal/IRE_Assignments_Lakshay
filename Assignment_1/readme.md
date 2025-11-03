@@ -285,6 +285,39 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
 
 
 
+## Combined Execution Evidence
+- Version v1.12000 – Boolean Retrieval (Baseline) {Latency: 301.01 ms Returned Documents: 80}
 
+  <img width="874" height="362" alt="image" src="https://github.com/user-attachments/assets/52e8791a-4a3f-439a-ba50-e93044f7a481" />
 
+- Version v1.22000 – TF Ranking (x=2) {Latency: 306.64 ms Returned: 592}
 
+  <img width="866" height="362" alt="image" src="https://github.com/user-attachments/assets/682a4c0d-aa22-4674-8075-1680e12003e4" />
+
+- Version v1.32000 – TF-IDF Ranking (x=3) {Latency: 299.93 ms Returned: 592}
+
+  <img width="866" height="362" alt="image" src="https://github.com/user-attachments/assets/bd5bed8a-89a6-49a5-bb85-318f160f3e74" />
+
+- SQLite → JSON Conversion (Datastore Preparation)
+
+  <img width="854" height="119" alt="image" src="https://github.com/user-attachments/assets/2d9d4361-213b-43bd-bdcf-b60709089f0f" />
+
+- Version v1.12000 – Boolean Search on JSON (y=1) {Latency: 0.13 ms Returned: 592}
+
+  <img width="909" height="356" alt="image" src="https://github.com/user-attachments/assets/5a0545ca-b1fe-494e-9ff7-897975c47c6c" />
+
+- Version v1.32000 – TF-IDF Search on JSON (y=1) {Latency: 0.23 ms Returned: 592}
+
+<img width="903" height="356" alt="image" src="https://github.com/user-attachments/assets/e37bd2c1-26ad-4e26-bde0-da21238d261c" />
+
+- Version v1.12000 – Boolean Search on SQLite (y=2) {Latency: 303.50 ms Returned: 592}
+
+<img width="867" height="407" alt="image" src="https://github.com/user-attachments/assets/b8b743c3-e8b1-4d23-acbd-907992425a2a" />
+
+- Version v1.32110 – TF-IDF + Compression + Skipping (z=1, i=1) {Latency: 305.13 ms Returned: 592}
+
+<img width="877" height="451" alt="image" src="https://github.com/user-attachments/assets/ca80e6cf-dc66-41d5-bdec-a86e5dcadbe0" />
+
+- Version v1.32112 – TF-IDF + Compression + Skipping + DAAT (q=2) {Latency: 309.67 ms Returned: 592}
+
+  <img width="881" height="451" alt="image" src="https://github.com/user-attachments/assets/aa389296-5e19-468b-a880-130843aa82bc" />
