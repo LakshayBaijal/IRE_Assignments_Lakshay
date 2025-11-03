@@ -201,9 +201,11 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
 ## Output
 ### Preprocessing
 - News dataset
+  
   <img width="926" height="206" alt="image" src="https://github.com/user-attachments/assets/e5917d90-19aa-4a10-a259-d199f7849139" />
 
 - Wiki dataset
+  
   <img width="903" height="202" alt="image" src="https://github.com/user-attachments/assets/0fc401be-0fc7-4be4-a674-f091039e70ce" />
 
 ### Index Construction
@@ -217,6 +219,7 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
 
 ### Query Execution
 - Wiki Dataset
+  
   <img width="866" height="466" alt="image" src="https://github.com/user-attachments/assets/3552e87e-bcea-4dfa-9944-206f53a191f8" />
   <img width="875" height="348" alt="image" src="https://github.com/user-attachments/assets/271e328c-9456-4a8f-a109-1156d0deb5ae" />
   <img width="842" height="348" alt="image" src="https://github.com/user-attachments/assets/ca744935-589a-4914-86a6-e89192b6e96a" />
@@ -224,6 +227,7 @@ python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
   <img width="844" height="348" alt="image" src="https://github.com/user-attachments/assets/8aa325b6-c72e-4a5c-b92b-fe285a604e7d" />
 
 - News Dataset
+
   <img width="869" height="228" alt="image" src="https://github.com/user-attachments/assets/1346d9f4-670c-439b-9231-814e93b9ea0c" />
   <img width="892" height="301" alt="image" src="https://github.com/user-attachments/assets/c9c660ae-e00d-4410-9da6-598cd8027e9f" />
   <img width="890" height="347" alt="image" src="https://github.com/user-attachments/assets/f2711df3-2aa7-49dd-92bc-90191566c198" />
