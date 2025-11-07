@@ -20,6 +20,10 @@ docker run --rm -p 3000:3000 \
 ```br
 python crawler.py --base-url http://localhost:3000 --seed page_eain05vc --limit 100
 ```
+```br
+sqlite3 crawl.db "SELECT COUNT(*) FROM pages;"
+sqlite3 crawl.db "SELECT page_id, length(out_links) FROM pages LIMIT 10;"
+```
 
 - compute pagerank + save graph
 
