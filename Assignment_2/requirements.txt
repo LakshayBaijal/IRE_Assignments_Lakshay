@@ -1,6 +1,0 @@
-requests
-pandas
-numpy
-requests
-beautifulsoup4
-pandas
