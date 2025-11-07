@@ -18,7 +18,7 @@ docker run --rm -p 3000:3000 \
 - crawl the site
 
 ```br
-python crawler.py --base-url http://localhost:3000 --seed page_et51vpuo --limit 100
+python crawler.py --base-url http://localhost:3000 --seed page_eain05vc --limit 100
 ```
 
 - compute pagerank + save graph
