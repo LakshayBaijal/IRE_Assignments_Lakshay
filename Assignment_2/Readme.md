@@ -77,8 +77,9 @@ Using the crawled link data, the PageRank algorithm was implemented to estimate 
 Where d = 0.85 (damping factor) , N = total pages, ln(i) = incoming links to page I,
 L(j) = number of outgoing links from page j.
 
+
 - PageRank Script
-  <img width="472" height="146" alt="image" src="https://github.com/user-attachments/assets/632681d2-4207-424b-ac89-0dbd33d49d4a" />
+<img width="472" height="146" alt="image" src="https://github.com/user-attachments/assets/632681d2-4207-424b-ac89-0dbd33d49d4a" />
 
 - PageRank Results
 <img width="414" height="427" alt="image" src="https://github.com/user-attachments/assets/ef39e017-038e-4939-86d2-b248184620fd" />
