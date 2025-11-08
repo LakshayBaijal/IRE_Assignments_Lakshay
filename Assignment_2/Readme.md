@@ -57,7 +57,7 @@ docker ps
 - Mapping File - Shows mapping between similar record IDs.
 <img width="389" height="617" alt="image" src="https://github.com/user-attachments/assets/9ec341d3-43be-4585-ab72-e2f7ca5d6494" />
 
-- Observation
+### Observation
 The program successfully grouped 2838 distinct person clusters from 5000 entries. Variations like address formatting and misspellings were handled properly.
 
 ### Activity 2.2.1: Crawling
