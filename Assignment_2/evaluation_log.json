@@ -1,0 +1,75 @@
+{
+  "first_visit_time": 1762986843.257604,
+  "log": [
+    {
+      "seconds_into_window": 1.079,
+      "entries_sent": 45,
+      "visit_count_increment": 12,
+      "total_visit_count": 12,
+      "status_code": 200,
+      "response": {
+        "coverage": 0.0,
+        "covered_nodes": 0,
+        "matched_entries": 0,
+        "mse": 0.0,
+        "total_nodes": 20
+      }
+    },
+    {
+      "seconds_into_window": 15.056,
+      "entries_sent": 45,
+      "visit_count_increment": 12,
+      "total_visit_count": 24,
+      "status_code": 200,
+      "response": {
+        "coverage": 0.0,
+        "covered_nodes": 0,
+        "matched_entries": 0,
+        "mse": 0.0,
+        "total_nodes": 20
+      }
+    },
+    {
+      "seconds_into_window": 29.066,
+      "entries_sent": 45,
+      "visit_count_increment": 12,
+      "total_visit_count": 36,
+      "status_code": 200,
+      "response": {
+        "coverage": 0.0,
+        "covered_nodes": 0,
+        "matched_entries": 0,
+        "mse": 0.0,
+        "total_nodes": 20
+      }
+    },
+    {
+      "seconds_into_window": 43.045,
+      "entries_sent": 45,
+      "visit_count_increment": 12,
+      "total_visit_count": 48,
+      "status_code": 200,
+      "response": {
+        "coverage": 0.0,
+        "covered_nodes": 0,
+        "matched_entries": 0,
+        "mse": 0.0,
+        "total_nodes": 20
+      }
+    },
+    {
+      "seconds_into_window": 57.044,
+      "entries_sent": 45,
+      "visit_count_increment": 12,
+      "total_visit_count": 60,
+      "status_code": 200,
+      "response": {
+        "coverage": 0.0,
+        "covered_nodes": 0,
+        "matched_entries": 0,
+        "mse": 0.0,
+        "total_nodes": 20
+      }
+    }
+  ]
+}
