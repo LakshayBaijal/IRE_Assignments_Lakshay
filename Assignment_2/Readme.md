@@ -10,7 +10,7 @@
 ```br
 https://github.com/LakshayBaijal/IRE_Assignments_Lakshay/blob/main/Assignment_2/M25CS4.406_%20Deduplication%20and%20Crawling%20_%20Moodle.pdf
 ```
-## Files to submit (important)
+## Important Files
 
 - dedup_data.csv
 - dedup_grouped.csv
