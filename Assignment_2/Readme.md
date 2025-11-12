@@ -7,6 +7,9 @@
 - Activity 2.1: Deduplication using fuzzy matching (rapidfuzz/fuzzywuzzy). Produces `dedup_grouped.csv`, `dedup_mapping.csv`.
 - Activity 2.2: Crawler, PageRank, evaluation submission.
 
+```br
+https://github.com/LakshayBaijal/IRE_Assignments_Lakshay/blob/main/Assignment_2/M25CS4.406_%20Deduplication%20and%20Crawling%20_%20Moodle.pdf
+```
 ## Files to submit (important)
 
 - dedup_data.csv
