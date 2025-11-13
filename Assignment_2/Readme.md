@@ -199,30 +199,46 @@ This approach minimizes visits while maximizing accuracy and freshness.
 
 ## Final Evaluation Metrics & Graphs
 - Mean Squared Error (MSE)
+
 MSE started near 0.0017 and increased slightly over time, indicating small deviations from the true PageRank.
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/d8053b18-0c86-4e6e-9ba4-6d21f5aac745" />
 
-- 
+- Coverage
 
+Coverage remained around 35% and dropped slightly at the last evaluation, reflecting undiscovered pages or changed node IDs.
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/0df1f27c-50a7-4f9b-ba18-82f887ac5143" />
 
+- Total Visits Over Time
 
-# Observations and Learnings
-- Fuzzy matching effectively handled name and address variations.
+Visit count increased linearly at +12 visits per evaluation.
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/93256ae6-17e1-445b-ba7f-2f0a37773d05" />
 
-- The web crawler correctly parsed HTML, extracted links, and stored results.
+- Entries Sent Over Time
 
-- PageRank highlighted key hub pages with high incoming connections.
+Consistently 45 entries submitted.
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/9d2bbf3b-b0c8-40e8-a228-ff5c8dc289c3" />
 
-- Graph visualization provided intuitive insight into site structure.
+- Combined Visits & Entries Graph
 
-# Conclusion
-- Deduplication using fuzzy similarity scoring.
+Shows visits increasing and entries remain constant.
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/1cbfeda2-a474-491c-b822-eed458e58a1f" />
 
-- Web crawling using a custom scraper and database storage.
+## Conclusion
 
-- PageRank computation using power iteration on crawled data.
+Both components of the assignment were completed successfully.
 
-- Graph visualization of link topology.
-Together, both parts illustrate real world applications of information retrieval and web indexing techniques.
+- In Activity 2.1, deduplication effectively grouped noisy and duplicate person records into consistent sets.
 
+- In Activity 2.2, the crawler efficiently extracted the web graph, computed PageRank, and maintained regular refresh cycles while respecting evaluation constraints.
+
+- The evaluation metrics show:
+
+- Low MSE, meaning accurate PageRank estimation
+
+- Moderate coverage, due to dynamic node updates
+
+- Consistent entries and visit behavior
+
+- All required evaluation timing rules were satisfied, and the system behaved exactly as expected under the 60-second evaluation window.
+Overall, the project demonstrates a functional deduplication pipeline and a working web-crawling-and-ranking system that performs reliably under timed evaluation.
