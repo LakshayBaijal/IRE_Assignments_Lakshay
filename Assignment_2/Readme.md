@@ -159,6 +159,54 @@ L(j) = number of outgoing links from page j.
 - Web Graph Visualization
 <img width="907" height="642" alt="image" src="https://github.com/user-attachments/assets/f38f55b7-aec8-4720-8bb0-5b348ef3dc13" />
 
+
+## Part D Updated Evaluation Mechanism (/evaluate endpoint)
+### Efficient Refresh Strategy (K-refresher)
+To minimize page visits and keep node_id values fresh, I implemented a Top-K Refresh Strategy:
+
+- Compute PageRank from crawl.db
+
+- Select top K highest PageRank pages
+
+- Revisit only those pages to refresh node IDs
+
+- Submit updated node_ids in each evaluation cycle
+
+
+This approach minimizes visits while maximizing accuracy and freshness.
+### Evaluation Script
+
+- Loads PageRank scores
+  
+- Picks Top-K pages for refreshing
+
+- Performs the required visits
+
+- Submits evaluations every 14 seconds
+
+- Collects all responses into evaluation_log.json
+
+
+### Final Evaluation Metrics (from evaluation_log.json)
+
+- Evaluation_log.json showing timestamps (seconds_into_window).
+<img width="390" height="342" alt="image" src="https://github.com/user-attachments/assets/01985ae2-2ba8-4a54-94dd-da6ede64dafa" />
+<img width="1391" height="287" alt="image" src="https://github.com/user-attachments/assets/1236e452-2fea-4a42-a000-dc5611bd1b03" />
+
+- Terminal output showing evaluations sent at correct intervals (≈1s, 15s, 29s, 43s, 57s)
+<img width="1389" height="165" alt="image" src="https://github.com/user-attachments/assets/d7c8c76b-4158-4aff-86c5-47996fe54d80" />
+<img width="994" height="51" alt="image" src="https://github.com/user-attachments/assets/12267776-05af-47a1-95f7-4fa345a3d507" />
+
+## Final Evaluation Metrics & Graphs
+- Mean Squared Error (MSE)
+MSE started near 0.0017 and increased slightly over time, indicating small deviations from the true PageRank.
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/d8053b18-0c86-4e6e-9ba4-6d21f5aac745" />
+
+- 
+
+
+
 # Observations and Learnings
 - Fuzzy matching effectively handled name and address variations.
 
