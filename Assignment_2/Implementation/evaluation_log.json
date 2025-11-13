@@ -1,0 +1,64 @@
+{
+  "log": [
+    {
+      "seconds_into_window": 0.0,
+      "entries_sent": 14,
+      "updated_nodes": 14,
+      "response": {
+        "coverage": 0.9333333333333333,
+        "covered_nodes": 14,
+        "matched_entries": 14,
+        "mse": 1.139117062699187e-06,
+        "total_nodes": 15
+      }
+    },
+    {
+      "seconds_into_window": 14.092,
+      "entries_sent": 14,
+      "updated_nodes": 14,
+      "response": {
+        "coverage": 0.9333333333333333,
+        "covered_nodes": 14,
+        "matched_entries": 14,
+        "mse": 1.139117062699187e-06,
+        "total_nodes": 15
+      }
+    },
+    {
+      "seconds_into_window": 28.228,
+      "entries_sent": 14,
+      "updated_nodes": 14,
+      "response": {
+        "coverage": 0.9333333333333333,
+        "covered_nodes": 14,
+        "matched_entries": 14,
+        "mse": 1.139117062699187e-06,
+        "total_nodes": 15
+      }
+    },
+    {
+      "seconds_into_window": 42.361,
+      "entries_sent": 14,
+      "updated_nodes": 14,
+      "response": {
+        "coverage": 0.9333333333333333,
+        "covered_nodes": 14,
+        "matched_entries": 14,
+        "mse": 1.139117062699187e-06,
+        "total_nodes": 15
+      }
+    },
+    {
+      "seconds_into_window": 56.471,
+      "entries_sent": 14,
+      "updated_nodes": 14,
+      "response": {
+        "coverage": 0.9333333333333333,
+        "covered_nodes": 14,
+        "matched_entries": 14,
+        "mse": 1.139117062699187e-06,
+        "total_nodes": 15
+      }
+    }
+  ]
+}
