@@ -232,13 +232,13 @@ Both components of the assignment were completed successfully.
 
 - In Activity 2.2, the crawler efficiently extracted the web graph, computed PageRank, and maintained regular refresh cycles while respecting evaluation constraints.
 
-- The evaluation metrics show:
+The evaluation metrics show:
 
-- Low MSE, meaning accurate PageRank estimation
+-- Low MSE, meaning accurate PageRank estimation
 
-- Moderate coverage, due to dynamic node updates
+-- Moderate coverage, due to dynamic node updates
 
-- Consistent entries and visit behavior
+-- Consistent entries and visit behavior
 
 - All required evaluation timing rules were satisfied, and the system behaved exactly as expected under the 60-second evaluation window.
 Overall, the project demonstrates a functional deduplication pipeline and a working web-crawling-and-ranking system that performs reliably under timed evaluation.
