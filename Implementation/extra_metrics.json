@@ -1,0 +1,17 @@
+{
+  "coverage": 1.0,
+  "visit_count": 533,
+  "matched_entries": 58,
+  "total_nodes": 58,
+  "mse": 1.0,
+  "diagnostics": {
+    "diff_min": 300,
+    "diff_max": 300,
+    "diff_median": 300,
+    "diff_mean": 300,
+    "p10": 300,
+    "p25": 300,
+    "p75": 300,
+    "p90": 300
+  }
+}
