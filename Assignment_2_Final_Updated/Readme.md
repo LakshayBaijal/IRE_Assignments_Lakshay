@@ -36,7 +36,7 @@ sudo docker run -d \
   crawling_assignment:unlimited
 ```
 
-### Crawler To get Metrics
+#### Crawler To get Metrics
 
 - Run Crawler
 - 30s test
@@ -59,7 +59,7 @@ ls -lh final_metric.json node_events.json
 docker cp crawling_srv:/data/evaluation.bin ./evaluation.bin 2>/dev/null || true
 ```
 
-### Deduplication
+#### Deduplication
 
 - Diagnose and Mapping
 
@@ -67,7 +67,7 @@ docker cp crawling_srv:/data/evaluation.bin ./evaluation.bin 2>/dev/null || true
 python3 dedup_lsh.py --input dedup_data.csv
 ```
 
-### Page Rank
+#### Page Rank
 
 - Check if Docker is running
 
@@ -75,7 +75,7 @@ python3 dedup_lsh.py --input dedup_data.csv
 python3 pagerank_crawl.py --base-url http://localhost:3000 --seed page_s1ns46p4 --window 60 --rps 2 --max-nodes 200 --top 10
 ```
 
-- Graph
+#### Graph
 
 ```br
 python3 graph_visualize.py --graph pagerank_graph.json --pr pagerank_scores.json
