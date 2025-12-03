@@ -58,6 +58,10 @@ python3 dedup_lsh.py --input dedup_data.csv
 
 - Check if Docker is running
 
+```br
+python3 pagerank_crawl.py --base-url http://localhost:3000 --seed page_s1ns46p4 --window 60 --rps 2 --max-nodes 200 --top 10
+```
+
 - Graph
 
 ```br
