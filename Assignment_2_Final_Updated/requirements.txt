@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+datasketch
+fuzzywuzzy
+python-Levenshtein
+networkx
+numpy
+pandas
+matplotlib
+tqdm
+rich
