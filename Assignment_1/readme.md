@@ -104,18 +104,32 @@ https://drive.google.com/drive/folders/1G1bWYRaep7kCVg9a1cM7i-TI1rc0lZF6
 20 directories, 66 files
 ```
 
+
 ## Build & Verify SQLite Index
-- Build & Verify SQLite Index
+
+- Build & Verify SQLite Index {Wiki}
+
 ```br
-python3 scripts/build_index.py data/wiki.txt wiki_index.db
+python3 scripts/rebuild_index.py wiki_index ../Dataset/Wiki_Dataset/data/processed/wiki_for_index.jsonl
 ```
+
+- Build & Verify SQLite Index {News}
+
+```br
+python3 scripts/rebuild_index.py news_index ../Dataset/webhose-news/data/processed/news_for_index.jsonl
+
+```
+
 - Verify database contents
+
 ```br
 python3 scripts/verify_sqlite.py wiki_index.db
 ```
 
 ## Search Using SQLite Index (SelfIndex-v1.x)
+
 - Boolean retrieval (x=1)
+
 ```br
 python3 scripts/search_sqlite_v.py wiki_index.db --version v1.12000 --query "artificial intelligence" --topk 10
 ```
@@ -139,29 +153,13 @@ python3 scripts/search_sqlite_v.py wiki_index.db --version v1.32110 --query "art
 ```
 
 - TF-IDF + Compression + Skipping + DAAT (x=3, z=1, i=1, q=2)
+
 ```br
 python3 scripts/search_sqlite_v.py wiki_index.db --version v1.32112 --query "artificial intelligence" --topk 10
 ```
 
-## Convert SQLite to JSON Format
-- Generate JSONL from database
-
-```br
-python3 scripts/sqlite_to_jsonl.py wiki_index.db wiki_postings.jsonl
-```
-
-## Search Using JSON Version (SelfIndex-v1.y)
-- Boolean Search (y=1, JSON datastore)
-```br
-python3 scripts/search_json_v.py wiki_postings.jsonl --version v1.12000 --query "artificial intelligence" --topk 10
-```
-- TF-IDF Search (y=1, JSON datastore)
-
-```br
-python3 scripts/search_json_v.py wiki_postings.jsonl --version v1.32000 --query "artificial intelligence" --topk 10
-```
-
 ## Measure Query Latency
+
 - Wiki Dataset
 
 ```br
@@ -169,34 +167,94 @@ python3 scripts/measure_latency_sqlite.py wiki_index.db scripts/wiki_queries.txt
 ```
 
 - News Dataset
+
 ```br
 python3 scripts/measure_latency_sqlite.py news_index.db scripts/news_queries.txt results/news_latency_results.csv
 ```
 
 ## Plot Latency Results
+
 - For wiki
+
 ```br
 python3 scripts/plot_latency.py results/wiki_latency_results.csv
 ```
+
 - For News
+
 ```br
 python3 scripts/plot_latency.py results/news_latency_results.csv
 ```
 
+# Elastic Search
+
 ## Run Elasticsearch Index (Docker)
+
+- Start Elastic Search (Docker Single Node, Security Disabled)
+
 ```br
-sudo docker start elasticsearch-container
+docker run -d --name elasticsearch-container \
+  -p 9200:9200 -p 9300:9300 \
+  -e "discovery.type=single-node" \
+  -e "xpack.security.enabled=false" \
+  -e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
+  docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+
+```
+
+- Verify Elasticsearch is Running
+
+```br
 curl http://localhost:9200
 ```
 
-- Build ES index
+### Indexing Data into Elasticsearch
+
+- Bulk Index Wiki Dataset
+
 ```br
-python3 es_scripts/es_build_index.py wiki_es_index wiki_dataset.jsonl
+python3 es_scripts/es_build_index.py wiki_es ../Dataset/Wiki_Dataset/data/processed/wiki_for_index.jsonl
 ```
-- Search
+
+- Bulk Index News Dataset
+
 ```br
-python3 es_scripts/es_search.py wiki_es_index "artificial intelligence"
+python3 es_scripts/es_build_index.py news_es ../Dataset/webhose-news/data/processed/news_for_index.jsonl
 ```
+
+- Search Wiki
+
+```br
+python3 es_scripts/es_search.py wiki_es "artificial intelligence"
+```
+
+- Search News
+
+```br
+
+python3 es_scripts/es_search.py news_es "technology"
+```
+
+### If needed
+
+- Stop Elasticsearch
+
+```br
+docker stop elasticsearch-container
+```
+
+- Restart Elasticsearch
+
+```br
+docker start elasticsearch-container
+```
+
+- Remove container
+
+```br
+docker rm elasticsearch-container
+```
+
 
 ## Output
 ### Preprocessing
