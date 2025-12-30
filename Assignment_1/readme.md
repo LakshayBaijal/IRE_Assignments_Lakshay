@@ -11,6 +11,12 @@ measurement on two datasets Wikipedia and News.
 https://drive.google.com/drive/folders/1G1bWYRaep7kCVg9a1cM7i-TI1rc0lZF6
 ```
 
+## Self Indexing Execution
+
+
+https://github.com/user-attachments/assets/f883e4cc-cd78-4c0a-94a2-608fc86eed5f
+
+
 
 ## Directory Structure
 ```br
