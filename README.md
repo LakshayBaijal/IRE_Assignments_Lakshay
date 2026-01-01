@@ -1,4 +1,4 @@
 Information Retrieval and Extraction Course Work in IIIT Hyderabad 3rd Semester
 
 Keywords- 
-tutorial, from-scratch, how-to, example, demo, install, run, dataset, colab, c++, linux, system-calls, yolov8, object-detection, opencv
+tutorial, from-scratch, how-to, example, demo, install, run, dataset, colab, c++, linux, system-calls, object-detection, opencv
